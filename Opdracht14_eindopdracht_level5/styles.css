@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+}
+body { 
+    width: 100%;
+    background-color: #d6e6a4;
+    font: normal 20px Gill Sans, Gill Sans MT, Calibri, sans-serif; 
+    color: #132819; 
+}
+header{
+    padding: 9px 18px;
+    border-bottom: solid #717C48 8px;
+    margin: 10px 30px;
+}
+.logo-head{
+    text-align: center;
+    padding: 15px 15px 15px 0;
+    margin: 20px 20px 20px 0;
+}
+.logo{
+    font: bold 50px Gill Sans Extrabold, sans-serif;
+    color: #9AB642;
+    padding: 10px 10px 0 10px;
+    margin: 10px 10px 0px 10px;
+}
+.logo-subtitle{
+    font: 600 20px Gill Sans Extrabold, sans-serif;
+    color: #717C48;
+    padding: 0 0 10px 0;
+    margin: 0px 5px 5px 5px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    text-align: center;
+}
+li {
+    display: inline-block;
+    width: auto;
+    border-right: solid #ebf0db 1px;
+}
+li:last-child {
+  border-right: none;
+} 
+a{
+    display: block;
+    background-color: #9AB642;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ebf0db;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px; 
+}
+a:hover{
+    background-color: #132819;
+}
+.active {
+    background-color: #132819;
+}
+h2{
+    font-family: Gill Sans Extrabold, sans-serif;
+    color:#717C48;
+    text-align: center;
+    padding: 5px 0;
+    border: solid black px;
+    margin: 10px 0 5px 0;
+}
+.tekstvak{
+    background-color: #ebf0db;
+    padding: 18px;
+    border-radius: 30px;
+    margin: 20px;
+}
+.meer , .link{
+    width: 70%;
+    background-color: #9AB642;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+.imgmoestuin , .imgplantjesmarkt , .imgoogst , .imgtuin , .imgterugblik{
+    display: block;
+    width: 90%;
+    border: solid #717C48 5px;
+    margin: 15px auto 20px auto; 
+}
+aside{
+    padding: 18px;
+    margin: 30px;
+}
+footer{
+    background-color: #717C48;
+    font: bold 18px  Gill Sans Extrabold, sans-serif;
+    color: #ebf0db;
+    text-align: center;
+    padding: 90px;
+}
+.formcontact , .formaanmeld{
+    line-height: 1.5;
+    padding: 40px;
+    border: solid #717C48 3px;
+    border-radius: 10px;
+    margin: 25px;
+}
+.forminput , .message{
+    width: 90%;
+    font: normal 16px Gill Sans, Gill Sans MT, Calibri, sans-serif; 
+    background-color: #ebf0db; 
+    outline: none;
+    border: none;
+}
+.persons {
+    width: 10%;
+    background-color: #ebf0db; 
+    font-size: 16px;
+    outline: none;
+    border: none;
+}
+.vink{
+    width: 1.25em;
+    height: 1.25em;
+    cursor: pointer;
+}
+.keuze{
+    font-style: italic;
+}
+button{
+    background-color: #9AB642;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ebf0db;
+    text-align: center;
+    padding: 14px 28px;
+    border: solid #717C48 2px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+button:hover{
+    background-color: #132819;
+}
+
+/* GRID en FLEXBOX */
+
+.container1 , container2 , .container3 , .container4 , .container5{
+    display: grid;
+    grid-template-columns: 20px 1fr 20px;
+    grid-auto-rows: max-content;
+    height: 100%;
+    width: 100%;
+}
+.container1{
+    grid-template-areas: 
+    "header header header"
+    ". nav ."
+    ". intro ."
+    ". markt ."
+    ". oogst ."
+    "footer footer footer";
+}
+.container2{
+    grid-template-areas: 
+    "header header header"
+    ". nav ."
+    ". over ."
+    ". photo ."
+    "footer footer footer";
+}
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.tuin{
+    align-self: center;
+}
+.container3{
+    grid-template-areas: 
+    "header header header"
+    ". nav ."
+    ". event ."
+    ". eventmarkt ."
+    ". terugblik ."
+    ". feedback ."
+    "footer footer footer";
+}
+.container4{
+    grid-template-areas: 
+    "header header header"
+    ". nav ."
+    ". contacttekst ."
+    ". formcontact ."
+    "footer footer footer";
+}
+.container5{
+    grid-template-areas: 
+    "header header header"
+    ". nav ."
+    ". aanmeldtekst ."
+    ". formaanmeld ."
+    "footer footer footer";
+}
+header{
+    grid-area: header;
+}
+.main-nav{
+    grid-area: nav;
+}
+.mainfigure{
+    grid-area: mainfigure;
+}
+.intro{
+    grid-area: intro;
+}
+.markt{
+    grid-area: markt;
+}
+.oogst{
+    grid-area: oogst;
+}
+.over{
+    grid-area: over;
+}
+.photo{
+    grid-area: photo;
+}
+.event{
+    grid-area: event;
+}
+.eventmarkt{
+    grid-area: eventmarkt;
+}
+.terugblik{
+    grid-area: terugblik;
+}
+.feedback{
+    grid-area: feedback;
+}
+.contacttekst{
+    grid-area: contacttekst;
+}
+.formcontact{
+    grid-area: formcontact;
+}
+.aanmeldtekst{
+    grid-area: aanmeldtekst;
+}
+.formaanmeld{
+    grid-area: formaanmeld;
+}
+footer{
+    grid-area: footer;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1024px) {
+    body{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 24px;
+    }
+    .container1 , .container3{
+        grid-template-columns: 40px 1fr 1fr 40px;
+    }
+    .container2{
+        grid-template-columns: 40px 1fr 40px;
+    }
+    .container4 , .container5{
+        grid-template-columns: 40px 300px 1fr 40px;
+    }
+    .container1{
+        grid-template-areas: 
+        ". header header nav" 
+        ". intro intro ."
+        ". markt markt ."
+        ". oogst oogst ."
+        "footer footer footer footer";       
+        }
+    header {
+        display: grid;
+        grid-auto-flow: column; 
+    }
+    .logo-head {
+        display: grid;
+        justify-content: start;
+    }
+    .navbar{
+        display:grid;
+        justify-content: end;
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+    .imgmoestuin , .imgoogst{
+        width: 50%;
+        float: right; 
+        margin: 15px 15px 15px 50px; 
+    }
+    .imgplantjesmarkt{
+        width: 50%;
+        float: left;
+        margin: 15px 50px 15px 15px;
+    }
+    .home{
+        padding: 50px 30px 30px 30px;
+    }
+    .meer{
+        width: 30%;
+        float: right;
+        margin: 30px 60px 30px auto;
+    }
+    .container3{
+        grid-template-areas: 
+        "header header header header" 
+        ". nav nav ."
+        ". event feedback ."
+        ". eventmarkt terugblik ."
+        "footer footer footer footer";
+    }
+    .container4{
+        grid-template-areas: 
+        "header header header header"
+        ". nav nav ."
+        ". contacttekst formcontact  ."
+        ". . formcontact ."
+        "footer footer footer footer";
+    }
+    .container5{
+        grid-template-areas: 
+        "header header header header"
+        ". nav nav ."
+        ". aanmeldtekst formaanmeld ."
+        ". . formaanmeld ."
+        "footer footer footer footer";
+    }
+    .contacttekst , .aanmeldtekst{
+        padding: 18px 18px 50px 18px;
+    }
+    .forminput{
+        width: 50%;
+    }
+    .persons{
+        width: 5%;
+    }
+}

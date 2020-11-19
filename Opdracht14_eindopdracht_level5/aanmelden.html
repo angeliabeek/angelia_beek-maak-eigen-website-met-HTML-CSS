@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aanmelden</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container5">
+
+        <header>
+            <div class="logo-head">
+                <h1 class="logo">MOESTUIN</h1>
+                <p class="logo-subtitle">Sta in contact met de aarde</p>
+            </div>
+            <div class="navbar">
+                <nav>
+                    <ul class="main-nav">
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="over.html">OVER</a>
+                        </li>
+                        <li>
+                            <a href="events.html">EVENTS</a>
+                        </li>
+                        <li><a href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="tekstvak aanmeldtekst">
+            <div>
+                <h2>Aanmelden</h2>
+                <p>Hieronder kan je je als verkoper aanmelden voor de plantjesmarkt op 3 april 2021. Bezoekers hoeven
+                    zich
+                    niet aan te melden. Iedereen is van harte welkom!</p>
+            </div>
+        </section>
+
+        <form class="formaanmeld" name="aanmelding" method="POST" data-netlify="true">
+            <div>
+                <label for="name">Naam</label><br>
+                <input class="forminput" type="text" name="name" id="name" required /><br>
+            </div>
+            <div>
+                <label for="persons">Aantal personen:</label><br>
+                <input class="persons" type="number" name="persons" id="persons" min="1" max="10" required>
+            </div><br>
+            <div>
+                Soorten plantjes die je meeneemt:
+                <div>
+                    <label class="keuze" for="groente">Groente</label>
+                    <input class="vink" type="checkbox" name="vegetables" id="vegetables" />
+                </div>
+                <div>
+                    <label class="keuze" for="bloemen">Bloemen</label>
+                    <input class="vink" type="checkbox" name="flowers" id="flowers" />
+                </div>
+                <div>
+                    <label class="keuze" for="kruiden">Kruiden</label>
+                    <input class="vink" type="checkbox" name="herbs" id="herbs" />
+                </div>
+                <div>
+                    <label class="keuze" for="fruit">Fruit</label>
+                    <input class="vink" type="checkbox" name="fruit" id="fruit" />
+                </div><br>
+            </div>
+            <div>
+                Gewenste lengte kraam (breedte altijd 0,8 meter)
+                <div>
+                    <label class="keuze" for="small">2 meter</label>
+                    <input class="vink" type="radio" name="markt" id="small" value="small" />
+                </div>
+                <div>
+                    <label class="keuze" for="medium">3 meter</label>
+                    <input class="vink" type="radio" name="markt" id="medium" value="medium" />
+                </div>
+                <div>
+                    <label class="keuze" for="large">4 meter</label>
+                    <input class="vink" type="radio" name="markt" id="large" value="large" />
+                </div><br>
+            </div>
+            <div>
+                <label for="phone">Telefoonnummer</label><br>
+                <input class="forminput" type="tel" name="phone" id="phone" required />
+            </div><br>
+            <div>
+                <label for="email">E-mailadres</label><br>
+                <input class="forminput" type="text" name="email" id="email" required /><br>
+            </div>
+            <div>
+                <label for="message">Eventuele opmerkingen</label><br>
+                <textarea class="message" name="message" id="message" rows="10" columns="30" required></textarea><br>
+            </div>
+            <div>
+                <button type="reset">Reset</button>
+                <button type="submit">Verzenden</button>
+            </div>
+        </form>
+
+        <footer>
+            <p>Copyright 2020</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

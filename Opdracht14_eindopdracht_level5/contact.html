@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container4">
+
+        <header>
+            <div class="logo-head">
+                <h1 class="logo">MOESTUIN</h1>
+                <p class="logo-subtitle">Sta in contact met de aarde</p>
+            </div>
+            <div class="navbar">
+                <nav>
+                    <ul class="main-nav">
+                        <li>
+                            <a href="index.html">HOME</a>
+                        </li>
+                        <li>
+                            <a href="over.html">OVER</a>
+                        </li>
+                        <li>
+                            <a href="events.html">EVENTS</a>
+                        </li>
+                        <li><a class="active" href="contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section class="tekstvak contacttekst">
+            <div>
+                <h2>Contactformulier</h2>
+                <p>Heb je vragen of opmerkingen? Vul dan dit contactformulier in en wij nemen zo spoedig mogelijk
+                    contact
+                    met je op.</p>
+            </div>
+        </section>
+
+        <form class="formcontact" name="contact" method="POST" data-netlify="true">
+            <div>
+                <label for="name">Naam</label><br>
+                <input class="forminput" type="text" name="name" id="name" required /><br>
+            </div>
+            <div>
+                <label for="email">E-mailadres</label><br>
+                <input class="forminput" type="text" name="email" id="email" required /><br>
+            </div>
+            <div>
+                <label for="message">Vraag en/of opmerking</label><br>
+                <textarea class="message" name="message" id="message" rows="10" columns="30" required></textarea><br>
+            </div>
+            <div>
+                <button type="submit">Verzenden</button>
+            </div>
+        </form>
+
+        <footer>
+            <p>Copyright 2020</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
